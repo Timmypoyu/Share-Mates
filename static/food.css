@@ -1,0 +1,61 @@
+.pizzaPic{
+ background: black;
+}
+
+.img{
+  height:550px;
+  width:550px;
+
+}
+.my-container{
+  background: black;
+  height: 300px;
+}
+
+.text-bar{
+  font-size: 32px;
+}
+
+.img{
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  left: 30%;
+  
+}
+
+.text-center{
+  top: 450px;
+  font-size: 30px;
+}
+.text{
+  position:absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.buttn{
+  left: 20px;
+}
+.form-action{
+  position: absolute;
+  top: 500px;
+  left: 550px;
+  
+}
+.sub{
+  position: relative;
+  top: 10%;
+  left: 30%;
+}
+
+.tex{
+  text-align: center;
+}
+
+.back-button{
+  
+  height: 50px;
+  width: 50px;
+  background: grey;
+}
