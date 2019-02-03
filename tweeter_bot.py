@@ -21,14 +21,15 @@ def champion_tweets():
     count = 0
     text= ""
     cord= []
+    id_str= ""
+    screen_name= ""
     for mention in mentions:
         temp_time = datetime.strptime(str(mention.created_at), "%Y-%m-%d %H:%M:%S")
 
-        if ((temp_time > (datetime.now() - timedelta(hours = 2))) and mention.user.geo_enabled ):
+        if ((temp_time > (datetime.now() - timedelta(hours = 10))) and mention.user.geo_enabled ):
             if '#sendpizza' in mention.text.lower():
-
                 if (count <= mention.favorited):
-
+                    print(mention.text)
                     count = mention.favorited
                     text = mention.text
                     cord = mention.coordinates["coordinates"]
