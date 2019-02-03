@@ -5,10 +5,10 @@
 
 ![Pizza page screenshot](/screenshots/pizza-screenshot.png?raw=true "Order Dominos")
 
-![Pizza page screenshot](/screenshots/pizza-screenshot.png?raw=true "Order Dominos")
+![Receipt page screenshot](/screenshots/receipt-screenshot.JPG?raw=true "Order Receipt")
 
-![Twitter page screenshot](/screenshots/tweet-screenshot.jpg?raw=true "Order Dominos")
+![Twitter page screenshot](/screenshots/tweet-screenshot.JPG?raw=true "Twitter")
 
-![Trees page screenshot](/screenshots/trees-screenshot.jpg?raw=true "Donate to plant trees")
+![Trees page screenshot](/screenshots/trees-screenshot.JPG?raw=true "Donate to plant trees")
 
 ![Clothes page screenshot](/screenshots/clothes-screenshot.png?raw=true "Donate Clothes")
