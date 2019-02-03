@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../static/food.css">
-        <script src="../static/func.js"></script>
       
 </head>
 
@@ -20,7 +19,7 @@
       <div class = "row">
             
                 <div class="col-md-12 col-sm-12">
-                        <img src="pictures/pizza.png" class="img-fluid img" alt="Responsive image">
+                        <img src="../static/pizza.png" class="img-fluid img" alt="Responsive image">
               </div>
      </div>
  
@@ -31,21 +30,15 @@
         </div>
        
         <div class= "row form-action">
-                <form action="/action_page.php">
+                <form action = "{{url_for('pizza')}}" method = "POST">
 
                     <input type="text" class= "tex" name="amount" value="1">
                     <br>
                     <div class= "sub">
                             <input type="submit" value="Submit">
-
                     </div>
-                   
                 </form> 
         </div>
-        <button onclick="homePage()">Back to Home</button>
-       
-        
-             
     </div>
 </body>
 </html>
