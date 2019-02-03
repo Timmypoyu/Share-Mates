@@ -32,6 +32,7 @@ def champion_tweets():
                     count = mention.favorited
                     text = mention.text
                     cord = mention.coordinates["coordinates"]
+                    id_str = mention.id_str
+                    screen_name = mention.user.screen_name
 
-
-    return text, cord
+    return text, cord, id_str, screen_name
