@@ -18,12 +18,21 @@ def index():
 def food():
     return render_template("food.html")
 
+@app.route("/tree")
+def tree():
+    return render_template("tree.html")
+
+@app.route("/clothes")
+def clothes():
+    return render_template("clothes.html")
+
 @app.route("/pizza", methods = ["POST"])
 def pizza():
 
     if request.method == "POST":
 
         text, cord, id_str, screen_name = champion_tweets()
+        reply_to_tweets(id_str)
         tweet_link = 'https://twitter.com/' + screen_name + '/status/' + id_str
         lng = str(cord[0])
         lat = str(cord[1])
@@ -40,19 +49,19 @@ def pizza():
             address = address[:-15]
         customer = Customer(first_name, last_name, email, phone_number, address)
 
-        my_local_dominos = StoreLocator.find_closest_store_to_customer(customer)
-        order = Order.begin_customer_order(customer, my_local_dominos)
+        # my_local_dominos = StoreLocator.find_closest_store_to_customer(customer)
+        # order = Order.begin_customer_order(customer, my_local_dominos)
 
-        list_of_order = [];
-        for i in range (0, int(request.form["amount"])):
-            list_of_order.append(order.add_item('P10IGFCZ'))
-        card = CreditCard('4100123422343234', '0115', '777', '90210')
-		# my_local_dominos.place_order(order, card)
+        # list_of_order = [];
+        # for i in range (0, int(request.form["amount"])):
+        #     list_of_order.append(order.add_item('P10IGFCZ'))
+        # card = CreditCard('4100123422343234', '0115', '777', '90210')
+		# # my_local_dominos.place_order(order, card)
 
-        res = {'Tweet': {'text': text, 'link': tweet_link}, 'Geolocation': cord, 'Address': address, 'Local Dominos': my_local_dominos, 'Total Order': list_of_order}
+        # res = {'Tweet': {'text': text, 'link': tweet_link}, 'Geolocation': cord, 'Address': address, 'Local Dominos': my_local_dominos, 'Total Order': list_of_order}
 
         # When Dominos locations are closed
-        # res = {'Tweet': {'text': text, 'link': tweet_link}, 'Geolocation': cord, 'Address': address}
+        res = {'Tweet': {'text': text, 'link': tweet_link}, 'Geolocation': cord, 'Address': address}
     return render_template("success.html", result=res)
 
 @app.route("/complete")

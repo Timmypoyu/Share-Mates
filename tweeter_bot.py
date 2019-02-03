@@ -36,3 +36,22 @@ def champion_tweets():
                     screen_name = mention.user.screen_name
 
     return text, cord, id_str, screen_name
+
+def reply_to_tweets(id_str):
+    print('retrieving and replying to tweets...', flush=True)
+    
+    # NOTE: We need to use tweet_mode='extended' below to show
+    # all full tweets (with full_text). Without it, long tweets
+    # would be cut off.
+    mentions = api.mentions_timeline(
+                        id_str,
+                        tweet_mode='extended')
+    for mention in mentions:
+        print(str(mention.id) + ' - ' + mention.full_text, flush=True)     
+        if '#sendpizza' in mention.full_text.lower():
+            print('found #sendpizza!', flush=True)
+            print('responding back...', flush=True)
+           # print(mention.user.screen_name)
+            api.update_status('@' + mention.user.screen_name +
+                    ' Sending a Pizza Pie to you at this moment to support the movement and cause! I hope everyone has a safe protest and fills up their stomach with delicious Dominos Pizza! Thank you'
+                        + ' so much for signing up with Share-Mates!', mention.id)
