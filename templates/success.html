@@ -12,12 +12,38 @@
 </head>
 
 <body>
-	<div class="container ">    
-         
+	<div class="container ">
+
       <div class = "row">
-      	 <div class="col-md-12 col-sm-12">
-      	 	Your transaction has been recorded. <a href="{{url_for('index')}}">Return to home page.</a>
-      	 </div>
+        <table class="table" border = 1>
+         {% for key, value in result.items() %}
+
+           {% if key == 'Total Order' %}
+           <tr>
+             <th> {{ key }} </th>
+             <td> {% for item in value %}
+             <p> {{ item.Name}} (Product Code: {{item.ProductCode}})</p>
+             {% endfor %}
+           </td>
+           </tr>
+
+           {% elif key== 'Tweet' %}
+           <th> {{ key }} </th>
+           <td> <a href={{value.link}}>{{ value.text }} </a></td>
+           {% else %}
+
+           <tr>
+              <th> {{ key }} </th>
+              <td> {{ value }} </td>
+           </tr>
+           {% endif %}
+
+         {% endfor %}
+      </table>
+
+      	 <a href="{{url_for('complete')}}"><div class="col-md-12 col-sm-12">
+      	 	Confirm
+      	 </div></a>
       </div>
   </div>
 </body>
