@@ -35,14 +35,3 @@ def champion_tweets():
                
                                 
     return text, cord
-
-
-print(champion_tweets())
-# r = requests.post("http://localhost:5000/pizza", json={"text": text, "cord": cord})
-
-# if (r.status_code == 200):
-#     print("YEAH!")
-# else:
-#     print("OH NO!")
-
-
