@@ -28,5 +28,3 @@ order.add_item('P10IGFCZ') # Small (10") Gluten Free Crust Wisconsin 6 Cheese Pi
 
 card = CreditCard('4100123422343234', '0115', '777', '90210')
 # my_local_dominos.place_order(order, card)
-print("Success")
-print(result["features"][0]["place_name"][:-15])
