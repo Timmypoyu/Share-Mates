@@ -9,35 +9,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../static/food.css">
-      
+
 </head>
 
-<body>     
-    
-    <div class="container ">    
-         
+<body>
+
+    <div class="container ">
+
       <div class = "row">
-            
+
                 <div class="col-md-12 col-sm-12">
                         <img src="../static/pizza.png" class="img-fluid img" alt="Responsive image">
               </div>
      </div>
- 
+
      <div class="row">
             <div class="col-md-12 col-sm-12 header text-center align-middle">
-                <span class = "align-middle">How many Pies do you want to donate?</span>             
+
+                <div>
+                  Small (10") Gluten Free Crust Wisconsin 6 Cheese Pizza $12.99.
+                </div>
+
             </div>
         </div>
-       
+
         <div class= "row form-action">
                 <form action = "{{url_for('pizza')}}" method = "POST">
-
-                    <input type="text" class= "tex" name="amount" value="1">
-                    <br>
-                    <div class= "sub">
-                            <input type="submit" value="Submit">
-                    </div>
-                </form> 
+                  <div class="form-group">
+                    <input type="text" class= "tex" name="amount" placeholder="Quantity to Donate">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
         </div>
     </div>
 </body>

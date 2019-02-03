@@ -3,8 +3,8 @@
 }
 
 .img{
-  height:550px;
-  width:550px;
+  height:350px;
+  width:350px;
 
 }
 .my-container{
@@ -21,7 +21,7 @@
   height: 450px;
   width: 450px;
   left: 30%;
-  
+
 }
 
 .text-center{
@@ -41,7 +41,7 @@
   position: absolute;
   top: 500px;
   left: 550px;
-  
+
 }
 .sub{
   position: relative;
@@ -54,7 +54,7 @@
 }
 
 .back-button{
-  
+
   height: 50px;
   width: 50px;
   background: grey;
