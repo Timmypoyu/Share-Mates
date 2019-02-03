@@ -1,0 +1,27 @@
+body {
+  margin: 30px;
+}
+
+.header{
+  font-size: 110px;
+}
+
+.item{
+  height: 300px;
+
+}
+
+.empty{
+  height:40px;
+}
+
+.img{
+  height:100%;
+  width:100%;
+  border: 1px solid black;
+
+}
+
+.text-bar{
+  height: 20px;
+}
