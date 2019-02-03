@@ -8,29 +8,47 @@
     <title>Share-Mates</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../static/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/tree.css">
       
 </head>
 
 <body>     
-        
+    <div class="row pictureHeaders ">
+        <div class="col-md-4 col-sm-4 item ">
+          <span>First Result</span>
+          
+        </div>
+        <div class="col-md-4 col-sm-4 item ">
+            <span>Second Result</span>
+           
+        </div>
+        <div class="col-md-4 col-sm-4  align-middle item"  >
+            <span>Third Result</span>
+            
+        </div>
+    </div>  
     <div class="container ">        
         <div class="row my-container">
             <div class="col-md-12 col-sm-12 header text-center align-middle">
-                <span class = "align-middle">Share-Mates</span>             
+                <img src="../static/treeMap.jpg" class="img-fluid mainPic" alt="Responsive image">      
             </div>
+           
         </div>
-        <div class = "row empty"> </div>
-        <div class="row">
+           
+        <div class="row pictures">
+          
             <div class="col-md-4 col-sm-4 item ">
-                    <a href = "{{url_for('tree')}}"><img src="../static/tree.jpg" class="img-fluid img" alt="Responsive image"></a>
+              <a href = "{{url_for('deforestation')}}">
+                <img " src="../static/deforestationFirst.jpg" class="img-fluid img" "alt="Responsive image"></a>
             </div>
             <div class="col-md-4 col-sm-4 item ">
-                     <a href = "{{url_for('food')}}"> <img src="../static/food.jpg" class="img-fluid img" alt="Responsive image"> </a>
+               
+                <img " src="../static/deforestationThird.jpg" class="img-fluid img" "alt="Responsive image">
             </div>
-            <!-- <div class="col-md-4 col-sm-4  align-middle item"  >
-                 <img " src="../static/clothes.jpg" class="img-fluid img" "alt="Responsive image">
-            </div> -->
+            <div class="col-md-4 col-sm-4  align-middle item"  >
+                
+                 <img " src="../static/deforstationSecond.jpg" class="img-fluid img" "alt="Responsive image">
+            </div>
         </div>      
     </div>
 </body>

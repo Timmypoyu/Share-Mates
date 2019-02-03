@@ -1,0 +1,51 @@
+body {
+  margin: 30px;
+}
+
+.header{
+  font-size: 110px;
+}
+
+.item{
+  position: absolute;
+  height: 300px;
+
+
+}
+
+.empty{
+  height:40px;
+}
+
+.my-container{
+  position:relative;
+  top: -310px;
+}
+
+.pictureHeaders{
+  position: relative;
+  font-size: 20px;
+  top: 290px;
+  left: 120px;
+}
+.pictures{
+  position: absolute;
+  top: 355px;
+}
+
+.mainPic{
+  height: 75%;
+  width: 40%;
+  border: 1px black;
+}
+
+.img{
+  height:70%;
+  width:70%;
+  border: 1px solid black;
+
+}
+
+.text-bar{
+  height: 20px;
+}

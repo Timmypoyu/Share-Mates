@@ -26,6 +26,15 @@ def tree():
 def clothes():
     return render_template("clothes.html")
 
+@app.route("/deforestation")
+def deforestation():
+    return render_template("deforestation.html")
+
+
+@app.route("/treeConfirmation")
+def treeConfirmation():
+    return render_template("treeConfirmation.html")
+
 @app.route("/pizza", methods = ["POST"])
 def pizza():
 
