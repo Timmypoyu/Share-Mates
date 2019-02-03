@@ -1,4 +1,8 @@
+import sys
+sys.path.append('./pizzapi')
+import pizzapy
 from pizzapy import *
+
 first_name = 'Barack'
 last_name = 'Obama'
 email = ''
