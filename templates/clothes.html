@@ -2,36 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Share-Mates</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../static/main.css">
-      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Donate Clothes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../static/clothes.css">
+
 </head>
 
-<body>     
-        
-    <div class="container ">        
-        <div class="row my-container">
-            <div class="col-md-12 col-sm-12 header text-center align-middle">
-                <span class = "align-middle">Share-Mates</span>             
-            </div>
-        </div>
-        <div class = "row empty"> </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-4 item ">
-                    <a href = "{{url_for('tree')}}"><img src="../static/tree.jpg" class="img-fluid img" alt="Responsive image"></a>
-            </div>
-            <div class="col-md-4 col-sm-4 item ">
-                     <a href = "{{url_for('food')}}"> <img src="../static/food.jpg" class="img-fluid img" alt="Responsive image"> </a>
-            </div>
-            <!-- <div class="col-md-4 col-sm-4  align-middle item"  >
-                    <a href = "{{url_for('clothes')}}"><img " src="../static/clothes.jpg" class="img-fluid img" "alt="Responsive image"></a>
-            </div> -->
-        </div>      
+<body>
+
+  <div class="container ">
+    <div class="row my-container">
+      <div class="col-md-12 col-sm-12 header text-center align-middle">
+        <span class="align-middle">Donate Clothes</span>
+      </div>
     </div>
+    <div class="row empty"> </div>
+
+<div class="col-md-4"></div>
+<div class="col-md-4">
+
+  <!-- Choose items to donate -->
+  <div> <h3> Select Items to Donate: </h3></div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="">
+      <label class="form-check-label" for="defaultCheck1">
+    Winter Jacket
+    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fae01.alicdn.com%2Fkf%2FHTB1cZVuJpXXXXckXVXXq6xXFXXXs%2F2015-Lovers-font-b-Winter-b-font-font-b-Jackets-b-font-font-b-Best-b.jpg&f=1" class="clothes-images"/>
+    </label>
+
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="">
+      <label class="form-check-label" for="defaultCheck1">
+    Belts
+    <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F91%2FBelt-clothing.jpg&f=1" class="clothes-images" />
+    </label>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="">
+      <label class="form-check-label" for="defaultCheck1">Winter Boots
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.wisegeek.com%2Fblack-slip-on-snow-boots.jpg&f=1" class="clothes-images" />
+    </label>
+    </div>
+
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="">
+    <label class="form-check-label" for="defaultCheck1">Water Resistant Gloves
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.thatdailydeal.com%2Fimages%2Fproducts%2Flineddannyglovers.jpg&f=1" class="clothes-images" />
+  </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="">
+    <label class="form-check-label" for="defaultCheck1">
+  Blanket
+<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fsite.topdogshirts.com%2Fimages%2Fblank%2Fbp80red.jpg&f=1" class="clothes-images" />
+  </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="">
+    <label class="form-check-label" for="defaultCheck1">
+  Bed Pillow
+  <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.landofnod.com%2Fis%2Fimage%2FLandOfNod%2FPillow_Toddler_LL&f=1" class="clothes-images" />
+  </label>
+  </div>
+</div>
+
+<div class="col-md-4"></div>
+
+<!--- Choose which organization to donate to -->
+<div class="row"><h3> Select Organization: </h3></div>
+<div class="row">
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Goodwill</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Salvation Army</label>
+</div>
+</div>
+<div class = "row empty"> </div>
+<div class="row">
+<a href="{{url_for('complete')}}"><div class="col-md-12 col-sm-12">
+ Confirm
+</div></a>
+</div>
+
+  </div>
 </body>
+
 </html>
